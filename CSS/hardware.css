@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Joystix Monospace';
+    src: url('fonts/Joystix-Monospace.woff2') format('woff2'),
+         url('fonts/Joystix-Monospace.woff') format('woff'),
+         url('fonts/Joystix-Monospace.otf') format('opentype');
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    font-family: 'Joystix Monospace', opentype;
+    color: white;
+    padding: 20px;
+}
+
+.hdr-logo-txt {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.hdr-logo-txt h1 {
+    transition: transform .2s;
+
+}
+
+.hdr-logo-txt h1:hover{
+    transform: scale(1.5);
+
+}
+
+.hdr-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hdr-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+#l1, #l3, #l5 {
+    transition: transform .2s;
+
+}
+
+#l1:hover, #l3:hover, #l5:hover {
+    transform: scale(1.5) rotate(15deg);
+
+}
+
+#l2, #l4, #l6 {
+    transition: transform .2s;
+
+}
+
+#l2:hover, #l4:hover, #l6:hover {
+    transform: scale(1.5) rotate(-15deg);
+
+}
+
+.Hardware {
+    text-align: center;
+    padding: 20px;
+
+}
+.Hardware h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-family: Orbitron;
+    font-size: 70px;
+}
+.Hardware p{
+    font-family: Orbitron;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.buscador input {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.buscador button {
+    padding: 10px 20px;
+    background-color: #005eb8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.buscador button:hover {
+    background-color: #003f7d;
+}
+h2 {
+    color: ba;
+    font-size: 35px;
+    margin-bottom: 45px;
+    font-family: Orbitron;
+    font-size: 50px;
+}
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-1 {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px;
+    text-align: center;
+}
+.product-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.product-txt {
+    padding: 50px 30px;
+}
+h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.btn-2 {
+    padding: 10px 25px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-2:hover {
+    background-color: #e639e6;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #615b5b;
+    position: absolute;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 160, 196);
+    padding: 40px;
+}
+
+.mail-inp input{
+    height: 50px;
+    width: 150px;
+
+}
+
+.mail-inp button {
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    border: none;
+}
+
+.mail h1 {
+    margin: 10px;
+}
+
+.ft-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ft-div nav {
+    margin: 10px;
+
+}
+
+.ft-div a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.ft-ct {
+    margin-top: 15px;
+
+
+}
+
+@media (min-width: 2560px){
+    .hdr-logo-txt h1 {
+        font-size: 120px;
+    }
+
+    .hdr-nav{
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 1436px) {
+    .sct5{
+        height: 40vh;
+
+    }
+
+}
+
+
+@media (max-width: 579px) {
+    
+    .sct1-dv1 {
+        height: 70vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sct1-dv1-dv2-ct1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sct1-dv1-dv2-ct1 button {
+        margin: 10px;
+        width: 168px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    .sct1-dv1-dv2{
+        margin-right: 40px;
+
+
+    }
+
+    .sct1-dv1-dv2 h1 {
+        font-size: 32px;
+        
+    }
+
+    .sct1-dv1-dv2 p{
+        display: none;
+    }
+
+    .sct2-div1{
+        margin-left: 16px;
+    }
+
+    .sct2-div2{
+        flex-direction: column;
+
+    }
+   
+    .div2-box1, .div2-box2, .div2-box3, .div2-box4{
+        position: relative;
+        width: 100%;
+        height: 320px;
+    
+    }
+
+    .box1-div1, .box2-div1, .box3-div1, .box4-div1{
+        left: 16px;
+        bottom: 16px;
+    }
+
+    .sct3 {
+        flex-direction: column;
+    }
+
+    .sct3-div1{
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .sct3-div1 p {
+        font-size: 32px;
+
+    }
+
+    .sct3-div2{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sct3-div2 img{
+        height: 160px;
+
+    }
+
+    .sct4-div2{
+        flex-wrap:  wrap;
+    }
+
+    .sct4-div3{
+        display: none;
+
+    }
+
+    .sct5{
+        height: 56vh;
+
+    }
+
+    .sct6-div2{
+        flex-wrap: wrap;
+
+    }
+
+    .sct6-div3{
+        display: none;
+
+    }
+    
+    
+}
+
+
+@media (min-width:580px) and (max-width: 1016px) {
+    
+    .sct1-dv1 {
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sct1-dv1-dv2{
+        margin-right: 40px;
+
+
+    }
+
+    .sct1-dv1-dv2 h1 {
+        font-size: 48px;
+
+    }
+
+    .sct1-dv1-dv2 p{
+        font-size: 32px;
+    }
+
+    .sct2-div1{
+        margin-left: 16px;
+    }
+
+    .sct2-div2{
+        flex-direction: column;
+
+    }
+   
+    .div2-box1, .div2-box2, .div2-box3, .div2-box4{
+        position: relative;
+        width: 100%;
+        height: 320px;
+    
+    }
+
+    .box1-div1, .box2-div1, .box3-div1, .box4-div1{
+        left: 24px;
+        bottom: 24px;
+    }
+
+    .sct3 {
+        flex-direction: column;
+    }
+
+    .sct3-div1{
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .sct3-div1 p {
+        font-size: 32px;
+
+    }
+
+    .sct3-div2{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sct3-div2 img{
+        height: 160px;
+
+    }
+
+    .sct5{
+        height: 48vh;
+
+    }
+
+    .sct6-div2, .sct6-div3{
+        flex-wrap: wrap;
+
+    }
+
+    .mail {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mail-inp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .mail-inp input{ 
+        height: 50px;
+        width: 150px;
+    }
+
+    .mail-inp button{
+        height: 40px;
+        width: 100px;
+        background-color: blueviolet;
+        border: none;
+    }
+
+    .ft-div .nv-dv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .ft-div .nv-dv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .mail {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mail-inp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .mail-inp input{ 
+        height: 50px;
+        width: 150px;
+    }
+
+    .mail-inp button{
+        height: 40px;
+        width: 100px;
+        background-color: blueviolet;
+        border: none;
+    }
+
+   
+}

@@ -1,0 +1,868 @@
+/* Se deshace de los espacios en blanco  */
+
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px red solid; */
+}
+
+/* Alinea los elementos de manera que esten en una sola linea y centrados */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    font-family: 'Joystix Monospace', opentype;
+    color: white;
+    padding: 20px;
+}
+
+.hdr-logo-txt {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.hdr-logo-txt h1 {
+    transition: transform .2s;
+
+}
+
+.hdr-logo-txt h1:hover{
+    transform: scale(1.5);
+
+}
+
+.hdr-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hdr-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+#l1, #l3, #l5 {
+    transition: transform .2s;
+
+}
+
+#l1:hover, #l3:hover, #l5:hover {
+    transform: scale(1.5) rotate(15deg);
+
+}
+
+#l2, #l4, #l6 {
+    transition: transform .2s;
+
+}
+
+#l2:hover, #l4:hover, #l6:hover {
+    transform: scale(1.5) rotate(-15deg);
+
+}
+
+/* Coloca una imagen de fondo y centra los elementos a la izquierda */
+.sct1-dv1 {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMG/castle-cmpr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sct1-dv1-dv2{  
+    margin-left: 40px;
+    color: rgb(243, 234, 234);
+    
+}
+
+.sct1-dv1-dv2 h1{
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(2rem, 4.5vw, 4rem);
+
+}
+
+.sct1-dv1-dv2 p{
+    font-family: "Kanit", serif;
+    font-family: "News Cycle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+
+}
+
+
+.sct1-dv1-dv2-ct1{
+    margin-top: 10px;
+
+}
+
+.sct1-dv1-dv2-ct1 button{
+    margin-right: 15px;
+    border: none;
+    height: 48px;
+    width: 160px;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+.sct1-dv1-dv2-ct1 button:first-child {
+    background-color: rgb(49, 19, 180);
+    color: white;
+    cursor: pointer;
+
+}
+
+.sct1-dv1-dv2-ct1 button:first-child:hover {
+    background-color: white;
+    color: black;
+
+
+}
+
+.sct1-dv1-dv2-ct1 button:last-child {
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+    
+}
+
+.sct1-dv1-dv2-ct1 button:last-child:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.sct2 {
+    padding-top: 40px;
+    background-color: rgba(13, 13, 14, 0.986);
+   
+
+}
+
+
+/* Coloca los elementos en una linea horizontal y al medio del contenedor */
+.sct2-div1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+    color: white;
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.sct2-div2{
+    display: flex;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+}
+
+/* Esta parte convierte las cajas para que ocupen una parte de la pagina y que se equilibren de manera uniforme */
+.s1div2-box1, .s1div2-box2, .s1div2-box3, .s1div2-box4{
+    position: relative;
+    width: 100%;
+    height: 480px;
+
+}
+
+.s1div2-box1 a, .s1div2-box2 a, .s1div2-box3 a, .s1div2-box4 a{
+    text-decoration: none;
+    color: #fff
+
+}
+
+.box1-div1, .box2-div1, .box3-div1, .box4-div1{
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    z-index: 1;
+}
+
+/* Vuelve todas las imagenes del contenedor opacas */
+.sct2-div2 img {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+}
+
+/* Al colocar el mouse encima, hace un efecto que aclara la imagen */
+.sct2-div2 img:hover {
+    opacity: 1;
+}
+
+/* Define el color del fondo y el espaciado entre secciones */
+.sct3 {
+    padding-top: 40px;
+    background-color: #edeaea;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+
+.sct3-div1{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}   
+
+
+.sct3-div1 h1{
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48px;
+
+}
+
+
+.sct3-div1 p{
+    font-family: "News Cycle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+}
+
+.sct3-div1 button{
+    border: none;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+    background: rgb(49, 19, 180);
+    color: white;
+    font-size: 24px;
+    margin: 16px;
+    width: 240px;
+    height: 62px;
+    cursor: pointer;
+}
+
+.sct3-div1 button:hover {
+    opacity: 0.7;
+
+}
+
+.sct3-div2{
+    margin-right: 60px;
+
+
+}
+.sct3-div2 img {
+    height: 400px;
+
+}
+
+/* Define el espaciado con la seccion de arriba y el color del fondo, tambien estiliza los bordes superiores */
+.sct4 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(19, 18, 18);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+/* Los elementos se posicionan en una sola linea y se les coloca un pequeño margen */
+.sct4-div1 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+
+}
+
+
+.sct4-div2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Los elementos se posicionan en una sola linea y se les coloca un pequeño margen */
+.sct4-div2{
+    display: flex;
+    justify-content: center;
+    font-family: "News Cycle", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+/* Se define la altura y anchura de las cajas que contienen las imagenes */
+.sct4 .div2-box1 {
+    color: #fff;
+    width: 100%;
+    height: 152px;
+    margin: 16px;
+    border-radius: 4px;
+}
+
+.sct4-div3 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Se aplica lo mismo que en la linea de cajas anterior */
+.sct4-div3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "News Cycle", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+
+/* Se define el tamaño del contenedor que ocupara la imagen */
+.sct4 .div3-box1 {
+    color: #fff;
+    width: 100%;
+    height: 144px;
+    margin: 16px;
+    border-radius: 4px;
+}
+
+/* La imagen se ajusta a la altura y anchura del contenedor para que se adapte a sus dimensiones */
+.div2-box1 img{
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+
+}
+
+/* Al colocar el mouse, se vuelve un poco transparente */
+.div2-box1 img:hover{
+    opacity: 0.5;
+
+}
+
+
+/* se selecciona la seccion 5 y se le aplica una imagen de fondo con efectos transparentes y propiedades 
+   que ocupan todo el fondo del contenedor */
+.sct5 {
+    height: 64vh;
+    background-image: linear-gradient(rgba(29, 27, 27, 0.5), rgba(19, 18, 18, 0.5)), url("../IMG/promociones.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Kanit';
+
+}
+
+/* Se coloca el texto en el centro de la seccion */
+.sct5 .sct5-div1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.sct5 .sct5-div1 h1{
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+
+}
+
+/* Se estiliza el parrafo */
+.sct5-txt{
+    color: #fff;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/* Se coloca la carta premium en el medio */
+.sct5-div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* se modifica con mas precision la posicion de la carta */
+
+.sct5-div2-ct1{
+    position: absolute;
+    bottom: 40%;
+    width: 70%;
+    height: 152px;
+}
+
+
+/* La imagen se modifica para que ocupe el espacio necesario del contenedor */
+.sct5-div2-ct1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sct5-div3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+
+.sct5-div3 button{
+    height: 52px;
+    width: 184px;
+    color: #fff;
+    background-color: gold;
+    border: none;
+    font-family: 'Kanit';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.sct6{
+    padding-top: 40px;
+    padding-bottom: 32px;
+    background-color: #ecebeb;
+}
+
+.sct6-div1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    color: black;
+}
+
+.sct6-div2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.div2-brand1{
+    border: 1px black solid;
+    margin: 16px;
+    width: 80%;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.div2-brand1 img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sct6-div3 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.div3-brand1{
+    border: 1px black solid;
+    margin: 16px;
+    width: 80%;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.div3-brand1 img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sct7 {
+    background-color: #7d768d;
+}
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(97, 91, 91);
+    position: absolute;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 160, 196);
+    padding: 40px;
+}
+
+.mail-inp input{
+    height: 50px;
+    width: 150px;
+
+}
+
+.mail-inp button {
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    border: none;
+}
+
+.mail h1 {
+    margin: 10px;
+}
+
+.ft-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ft-div nav {
+    margin: 10px;
+
+}
+
+.ft-div a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.ft-ct {
+    margin-top: 15px;
+
+
+}
+
+@media (min-width: 2560px){
+    .hdr-logo-txt h1 {
+        font-size: 120px;
+    }
+
+    .hdr-nav{
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 1436px) {
+    .sct5{
+        height: 40vh;
+
+    }
+
+}
+
+
+@media (max-width: 579px) {
+    
+    .sct1-dv1 {
+        height: 70vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sct1-dv1-dv2-ct1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sct1-dv1-dv2-ct1 button {
+        margin: 10px;
+        width: 168px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    .sct1-dv1-dv2{
+        margin-right: 40px;
+
+
+    }
+
+    .sct1-dv1-dv2 h1 {
+        font-size: 32px;
+        
+    }
+
+    .sct1-dv1-dv2 p{
+        display: none;
+    }
+
+    .sct2-div1{
+        margin-left: 16px;
+    }
+
+    .sct2-div2{
+        flex-direction: column;
+
+    }
+   
+    .div2-box1, .div2-box2, .div2-box3, .div2-box4{
+        position: relative;
+        width: 100%;
+        height: 320px;
+    
+    }
+
+    .box1-div1, .box2-div1, .box3-div1, .box4-div1{
+        left: 16px;
+        bottom: 16px;
+    }
+
+    .sct3 {
+        flex-direction: column;
+    }
+
+    .sct3-div1{
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .sct3-div1 p {
+        font-size: 32px;
+
+    }
+
+    .sct3-div2{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sct3-div2 img{
+        height: 160px;
+
+    }
+
+    .sct4-div2{
+        flex-wrap:  wrap;
+    }
+
+    .sct4-div3{
+        display: none;
+
+    }
+
+    .sct5{
+        height: 56vh;
+
+    }
+
+    .sct6-div2{
+        flex-wrap: wrap;
+
+    }
+
+    .sct6-div3{
+        display: none;
+
+    }
+    
+    
+}
+
+
+@media (min-width:580px) and (max-width: 1016px) {
+    
+    .sct1-dv1 {
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sct1-dv1-dv2{
+        margin-right: 40px;
+
+
+    }
+
+    .sct1-dv1-dv2 h1 {
+        font-size: 48px;
+
+    }
+
+    .sct1-dv1-dv2 p{
+        font-size: 32px;
+    }
+
+    .sct2-div1{
+        margin-left: 16px;
+    }
+
+    .sct2-div2{
+        flex-direction: column;
+
+    }
+   
+    .div2-box1, .div2-box2, .div2-box3, .div2-box4{
+        position: relative;
+        width: 100%;
+        height: 320px;
+    
+    }
+
+    .box1-div1, .box2-div1, .box3-div1, .box4-div1{
+        left: 24px;
+        bottom: 24px;
+    }
+
+    .sct3 {
+        flex-direction: column;
+    }
+
+    .sct3-div1{
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .sct3-div1 p {
+        font-size: 32px;
+
+    }
+
+    .sct3-div2{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sct3-div2 img{
+        height: 160px;
+
+    }
+
+    .sct5{
+        height: 48vh;
+
+    }
+
+    .sct6-div2, .sct6-div3{
+        flex-wrap: wrap;
+
+    }
+
+    .mail {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mail-inp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .mail-inp input{ 
+        height: 50px;
+        width: 150px;
+    }
+
+    .mail-inp button{
+        height: 40px;
+        width: 100px;
+        background-color: blueviolet;
+        border: none;
+    }
+
+    .ft-div .nv-dv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .ft-div .nv-dv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .mail {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mail-inp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .mail-inp input{ 
+        height: 50px;
+        width: 150px;
+    }
+
+    .mail-inp button{
+        height: 40px;
+        width: 100px;
+        background-color: blueviolet;
+        border: none;
+    }
+
+   
+}

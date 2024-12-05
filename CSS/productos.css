@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Joystix Monospace';
+    src: url('fonts/Joystix-Monospace.woff2') format('woff2'),
+         url('fonts/Joystix-Monospace.woff') format('woff'),
+         url('fonts/Joystix-Monospace.otf') format('opentype');
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    font-family: 'Joystix Monospace', opentype;
+    color: white;
+    padding: 20px;
+}
+
+.hdr-logo-txt {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.hdr-logo-txt h1 {
+    transition: transform .2s;
+
+}
+
+.hdr-logo-txt h1:hover{
+    transform: scale(1.5);
+
+}
+
+.hdr-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hdr-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+#l1, #l3, #l5 {
+    transition: transform .2s;
+
+}
+
+#l1:hover, #l3:hover, #l5:hover {
+    transform: scale(1.5) rotate(15deg);
+
+}
+
+#l2, #l4, #l6 {
+    transition: transform .2s;
+
+}
+
+#l2:hover, #l4:hover, #l6:hover {
+    transform: scale(1.5) rotate(-15deg);
+
+}
+
+main {
+    height: auto;
+    margin-top: 2%;
+}
+
+.promo {
+    margin-top: 4%;
+    padding: 0.5rem;
+    height: auto;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.promo a button{
+    margin: 10px;
+    width: 168px;
+    height: 48px;
+    font-size: 24px;
+    margin-top:-1%;
+    margin-bottom: 1%;
+    background-color: #e7e4e0;
+    font-family: Orbitron;
+
+}
+
+.promociones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.promo h2 {
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 5%;
+    font-family: Orbitron;
+
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0;
+    border: 1px solid black;
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 800px;
+    box-shadow: 3px 3px 5px black;
+    background-color: white;
+    transition: transform 0.7s ease-in-out;
+}
+
+.card h3 {
+    margin: 0px;
+    background-color: rgb(160, 160, 196);
+    color: black;
+    font-size: 25px;
+    padding: 0.5rem;
+}
+
+.card img {
+    align-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.card p {
+   flex: 1 0 auto;
+   padding: 0.5rem;
+   font-size: 25px;
+   color: black; 
+}
+
+.card span {
+    display: block;
+    text-align: right;
+    padding: 0.5rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.promociones .card:hover {
+    transform: scale(120%);
+    z-index: 1000;
+}
+
+.video {
+    margin-top: -2%;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap-title-section h2 {
+    margin-top: 5%;
+    font-size: 50px;
+    color: black;
+    font-family: Orbitron;
+}
+
+.column-2.carta {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.juego-carta {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e7e4e0;
+    border-radius: 6px;
+}
+
+.img-juego {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+}
+
+.img-juego img {
+    width: 150px;
+    height: 150px;
+}
+
+.title-juego {
+    border: 1px solid #e7e4e0;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+}
+
+.precio-juego {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #615b5b;
+    position: absolute;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 160, 196);
+    padding: 40px;
+}
+
+.mail-inp input{
+    height: 50px;
+    width: 150px;
+
+}
+
+.mail-inp button {
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    border: none;
+}
+
+.mail h1 {
+    margin: 10px;
+}
+
+.ft-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ft-div nav {
+    margin: 10px;
+
+}
+
+.ft-div a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.ft-ct {
+    margin-top: 15px;
+
+
+}
+
+/* Para pantallas pequeñas (teléfonos, <600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hdr-logo-txt h1 {
+        font-size: 24px;
+    }
+
+    .hdr-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .promo h2 {
+        font-size: 30px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .column-2.carta {
+        grid-template-columns: 1fr;
+    }
+
+    .juego-carta {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Para pantallas medianas (tabletas, 601px-900px) */
+@media (max-width: 900px) {
+    .hdr-nav {
+        flex-wrap: wrap;
+    }
+
+    .promo h2 {
+        font-size: 40px;
+    }
+
+    .column-2.carta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrap-title-section h2 {
+        font-size: 36px;
+    }
+
+    .juego-carta .img-juego img {
+        width: 120px;
+        height: 120px;
+    }
+}

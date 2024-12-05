@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Joystix Monospace';
+    src: url('fonts/Joystix-Monospace.woff2') format('woff2'),
+         url('fonts/Joystix-Monospace.woff') format('woff'),
+         url('fonts/Joystix-Monospace.otf') format('opentype');
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    font-family: 'Joystix Monospace', opentype;
+    color: white;
+    padding: 20px;
+}
+
+.hdr-logo-txt {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.hdr-logo-txt h1 {
+    transition: transform .2s;
+
+}
+
+.hdr-logo-txt h1:hover{
+    transform: scale(1.5);
+
+}
+
+.hdr-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hdr-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+#l1, #l3, #l5 {
+    transition: transform .2s;
+
+}
+
+#l1:hover, #l3:hover, #l5:hover {
+    transform: scale(1.5) rotate(15deg);
+
+}
+
+#l2, #l4, #l6 {
+    transition: transform .2s;
+
+}
+
+#l2:hover, #l4:hover, #l6:hover {
+    transform: scale(1.5) rotate(-15deg);
+
+}
+
+/* Sección de colección */
+.coleccion {
+    text-align: center;
+    padding: 20px;
+}
+
+.coleccion h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-family: Orbitron;
+    font-size: 50px;
+}
+
+.coleccion p {
+    font-family: Orbitron;
+    font-size: 20px;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.buscador input {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.buscador button {
+    padding: 10px 20px;
+    background-color: #005eb8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.buscador button:hover {
+    background-color: #003f7d;
+}
+
+.juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre tarjetas */
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.juego {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.juego:hover {
+    transform: scale(1.05);
+}
+
+.juego .imagen {
+    width: 100%;
+    height: 150px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.juego .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
+    border-radius: 5px;
+}
+
+.juego h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #005eb8;
+}
+
+/* Sección de estrenos */
+.estrenos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+.titulo-estrenos {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Orbitron;
+    font-size: 30px;
+}
+
+.contenido-estrenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.gif {
+    width: 150px;
+    height: 150px;
+}
+
+.gif img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.video iframe {
+    width: 560px; 
+    height: 315px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@media (max-width: 800px) {
+    .juegos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 500px) {
+    .juegos {
+        grid-template-columns: 1fr; 
+    }
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #615b5b;
+    position: absolute;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 160, 196);
+    padding: 40px;
+}
+
+.mail-inp input{
+    height: 50px;
+    width: 150px;
+
+}
+
+.mail-inp button {
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    border: none;
+}
+
+.mail h1 {
+    margin: 10px;
+}
+
+.ft-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ft-div nav {
+    margin: 10px;
+
+}
+
+.ft-div a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.ft-ct {
+    margin-top: 15px;
+
+
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .buscador input {
+        width: 70%;
+    }
+
+    .juego {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        width: 95%;
+    }
+}
