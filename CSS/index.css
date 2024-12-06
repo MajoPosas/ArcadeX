@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
+
+
 /* Se deshace de los espacios en blanco  */
 
 * {
     padding: 0;
     margin: 0;
+    
     /* border: 1px red solid; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /* Alinea los elementos de manera que esten en una sola linea y centrados */
@@ -71,6 +80,7 @@ header {
 }
 
 /* Coloca una imagen de fondo y centra los elementos a la izquierda */
+
 .sct1-dv1 {
     display: flex;
     align-items: center;
@@ -89,19 +99,19 @@ header {
 }
 
 .sct1-dv1-dv2 h1{
-    font-family: "Kanit", serif;
-    font-weight: 500;
+    font-family: Orbitron;
+    font-weight: 400;
     font-style: normal;
-    font-size: clamp(2rem, 4.5vw, 4rem);
+    font-size: clamp(1rem, 4.0vw, 3rem);
+    border-bottom: 3%;
 
 }
 
 .sct1-dv1-dv2 p{
-    font-family: "Kanit", serif;
-    font-family: "News Cycle", serif;
+    font-family: Orbitron;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 20px;
 
 }
 
@@ -116,7 +126,7 @@ header {
     border: none;
     height: 48px;
     width: 160px;
-    font-family: "Kanit", serif;
+    font-family: Orbitron;
     font-weight: 400;
     font-style: normal;
     font-size: large;
@@ -164,7 +174,7 @@ header {
     justify-content: center;
     padding-bottom: 24px;
     color: white;
-    font-family: "Kanit", serif;
+    font-family: Orbitron;
     font-weight: 700;
     font-style: normal;
     font-size: 32px;
@@ -172,7 +182,7 @@ header {
 
 .sct2-div2{
     display: flex;
-    font-family: "Kanit", serif;
+    font-family: Orbitron;
     font-weight: 600;
     font-style: normal;
     font-size: 24px;
@@ -234,7 +244,7 @@ header {
 
 
 .sct3-div1 h1{
-    font-family: "Kanit", serif;
+    font-family: Orbitron;
     font-weight: 500;
     font-style: normal;
     font-size: 48px;
@@ -243,7 +253,7 @@ header {
 
 
 .sct3-div1 p{
-    font-family: "News Cycle", serif;
+    font-family: Orbitron;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -252,7 +262,7 @@ header {
 
 .sct3-div1 button{
     border: none;
-    font-family: "Kanit", serif;
+    font-family: Orbitron;
     font-weight: 600;
     font-style: normal;
     background: rgb(49, 19, 180);
@@ -295,7 +305,7 @@ header {
     display: flex;
     justify-content: center;
     color: #fff;
-    font-family: "Kanit", serif;
+    font-family: Orbitron;
     font-weight: 500;
     font-style: normal;
     font-size: 24px;
@@ -312,7 +322,7 @@ header {
 .sct4-div2{
     display: flex;
     justify-content: center;
-    font-family: "News Cycle", serif;
+    font-family: Orbitron;
     font-weight: 600;
     font-style: normal;
     font-size: 16px;
@@ -339,7 +349,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-family: "News Cycle", serif;
+    font-family: Orbitron;
     font-weight: 600;
     font-style: normal;
     font-size: 16px;
@@ -396,7 +406,7 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-
+    font-family: Orbitron;
 }
 
 /* Se estiliza el parrafo */
@@ -404,8 +414,9 @@ header {
     color: #fff;
     font-weight: 300;
     font-style: normal;
+    font-family: Orbitron;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 
@@ -449,7 +460,7 @@ header {
     color: #fff;
     background-color: gold;
     border: none;
-    font-family: 'Kanit';
+    font-family: Orbitron;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -467,7 +478,7 @@ header {
 .sct6-div1 {
     display: flex;
     justify-content: center;
-    font-family: 'Kanit';
+    font-family: Orbitron;
     font-weight: 600;
     font-style: normal;
     font-size: 32px;

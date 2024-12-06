@@ -1,12 +1,13 @@
+/* Importación de fuentes desde Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
 
+/* Definición de fuente personalizada para 'Joystix Monospace' */
 @font-face {
     font-family: 'Joystix Monospace';
     src: url('fonts/Joystix-Monospace.woff2') format('woff2'),
          url('fonts/Joystix-Monospace.woff') format('woff'),
          url('fonts/Joystix-Monospace.otf') format('opentype');
-  }
-
+}
 
 /* Estilos globales */
 * {
@@ -21,7 +22,7 @@ body {
     color: #333;
 }
 
-/* Header */
+/* Header - Estilos para el encabezado de la página */
 header {
     display: flex;
     flex-direction: column;
@@ -34,28 +35,28 @@ header {
     padding: 20px;
 }
 
+/* Logo y texto dentro del header */
 .hdr-logo-txt {
     display: flex;
     text-decoration: none;
     color: white;
 }
 
+/* Efecto de escala al pasar el mouse sobre el título del logo */
 .hdr-logo-txt h1 {
     transition: transform .2s;
-
 }
 
-.hdr-logo-txt h1:hover{
+.hdr-logo-txt h1:hover {
     transform: scale(1.5);
-
 }
 
-.hdr-nav{
+/* Barra de navegación dentro del header */
+.hdr-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .hdr-nav a {
@@ -64,34 +65,30 @@ header {
     margin: 10px;
 }
 
+/* Efecto de escala y rotación para los enlaces de la navegación */
 #l1, #l3, #l5 {
     transition: transform .2s;
-
 }
 
 #l1:hover, #l3:hover, #l5:hover {
     transform: scale(1.5) rotate(15deg);
-
 }
 
 #l2, #l4, #l6 {
     transition: transform .2s;
-
 }
 
 #l2:hover, #l4:hover, #l6:hover {
     transform: scale(1.5) rotate(-15deg);
-
 }
 
-
-/* Promociones */
-
+/* Estilos para la sección de promociones */
 .coleccion {
     text-align: center;
     padding: 20px;
 }
 
+/* Estilos del buscador */
 .buscador {
     display: flex;
     justify-content: center;
@@ -113,7 +110,8 @@ header {
     cursor: pointer;
 }
 
-.promocionestitulo h1{
+/* Títulos de las promociones */
+.promocionestitulo h1 {
     margin-top: 3%;
     font-family: Orbitron;
     display: flex;
@@ -132,11 +130,9 @@ header {
     align-items: center;
     margin-bottom: 3%;
     color: black;
-
 }
 
-
-/* Juegos */
+/* Estilos para la sección de juegos */
 .juegos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
@@ -152,7 +148,8 @@ header {
     text-align: center;
 }
 
-.juego:hover{
+/* Efecto de transición al pasar el mouse sobre un juego */
+.juego:hover {
     cursor: pointer;
     transition: 1s all;
     transform: scale(1.1);
@@ -163,6 +160,7 @@ header {
     border-radius: 5px;
 }
 
+/* Estilos del footer */
 footer {
     width: 100%;
     height: auto;
@@ -170,7 +168,8 @@ footer {
     position: absolute;
 }
 
-.mail{
+/* Estilos para la sección de correo en el footer */
+.mail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,10 +177,9 @@ footer {
     padding: 40px;
 }
 
-.mail-inp input{
+.mail-inp input {
     height: 50px;
     width: 150px;
-
 }
 
 .mail-inp button {
@@ -195,6 +193,7 @@ footer {
     margin: 10px;
 }
 
+/* Contenedor del footer */
 .ft-div {
     display: flex;
     align-items: center;
@@ -203,7 +202,6 @@ footer {
 
 .ft-div nav {
     margin: 10px;
-
 }
 
 .ft-div a {
@@ -214,11 +212,9 @@ footer {
 
 .ft-ct {
     margin-top: 15px;
-
-
 }
 
-/* Para pantallas pequeñas (teléfonos) */
+/* Estilos para pantallas pequeñas (teléfonos) */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -262,7 +258,7 @@ footer {
     }
 }
 
-/* Para pantallas medianas (tabletas) */
+/* Estilos para pantallas medianas (tabletas) */
 @media (max-width: 900px) {
     .hdr-nav {
         flex-wrap: wrap;
@@ -285,4 +281,3 @@ footer {
         font-size: 16px;
     }
 }
-

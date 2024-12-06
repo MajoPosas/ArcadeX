@@ -1,140 +1,235 @@
+/* Importación de fuentes desde Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
 
-*{
+/* Reset de estilos globales */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fuente personalizada 'Joystix Monospace' */
 @font-face {
     font-family: 'Joystix Monospace';
     src: url('fonts/Joystix-Monospace.woff2') format('woff2'),
          url('fonts/Joystix-Monospace.woff') format('woff'),
          url('fonts/Joystix-Monospace.otf') format('opentype');
-  }
-
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
+/* Estilo base para el cuerpo de la página */
+body {
+    font-family: Orbitron; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #333; /* Color de texto estándar */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilos del encabezado */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0); /* Fondo negro */
     justify-content: space-between;
     font-family: 'Joystix Monospace', opentype;
-    color: white;
+    color: white; /* Texto blanco */
     padding: 20px;
 }
 
+/* Logo y texto del encabezado */
 .hdr-logo-txt {
     display: flex;
     text-decoration: none;
     color: white;
 }
 
+/* Efecto hover en el título principal */
 .hdr-logo-txt h1 {
-    transition: transform .2s;
-
+    transition: transform .2s; /* Animación suave */
+}
+.hdr-logo-txt h1:hover {
+    transform: scale(1.5); /* Agrandar al pasar el cursor */
 }
 
-.hdr-logo-txt h1:hover{
-    transform: scale(1.5);
-
-}
-
-.hdr-nav{
+/* Navegación del encabezado */
+.hdr-nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
     justify-content: center;
     align-items: center;
-
 }
 
+/* Estilos para enlaces en la navegación */
 .hdr-nav a {
-    text-decoration: none;
+    text-decoration: none; /* Sin subrayado */
     color: #fff;
     margin: 10px;
 }
 
+/* Efectos de hover en enlaces con rotaciones */
 #l1, #l3, #l5 {
     transition: transform .2s;
-
 }
-
 #l1:hover, #l3:hover, #l5:hover {
     transform: scale(1.5) rotate(15deg);
-
 }
-
 #l2, #l4, #l6 {
     transition: transform .2s;
-
 }
-
 #l2:hover, #l4:hover, #l6:hover {
     transform: scale(1.5) rotate(-15deg);
-
 }
 
+/* Contenedor principal */
+.container, .info {
+    width: 80%; /* Ancho relativo */
+    max-width: 1200px; /* Límite de ancho */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px;
+}
 
+/* Estilos para el formulario de contacto */
+.form {
+    background: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.form h2 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 50px; /* Tamaño grande para el título */
+    text-align: center;
+}
 
+/* Inputs y áreas de texto */
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
 
+/* Botón de envío */
+.form .submit {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(160, 160, 196);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Orbitron;
+}
+.form .submit:hover {
+    background-color: #0056b3; /* Cambio de color en hover */
+}
+
+/* Información adicional */
+.info {
+    margin-top: 40px;
+}
+.info .img-1 {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 200px;
+}
+
+/* Sección de ubicación */
+.location {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Diseño adaptable */
+    gap: 20px;
+}
+
+/* Iconos y descripciones */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+}
+.icons img {
+    max-width: 30px;
+    height: auto;
+}
+
+/* Footer */
 footer {
     width: 100%;
     height: auto;
-    background-color: #615b5b;
+    background-color: #615b5b; /* Fondo gris */
     position: absolute;
 }
 
-.mail{
+/* Sección de correos */
+.mail {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(160, 160, 196);
     padding: 40px;
 }
-
-.mail-inp input{
+.mail-inp input {
     height: 50px;
     width: 150px;
-
 }
-
 .mail-inp button {
     height: 40px;
     width: 100px;
-    background-color: blue;
+    background-color: white;
+    color: rgb(160, 160, 196);
     border: none;
 }
 
-.mail h1 {
-    margin: 10px;
+/* Media Queries para diseño responsivo */
+/* Ajustes para pantallas medianas */
+@media (max-width: 1200px) {
+    .container, .info {
+        width: 90%; /* Más ancho en pantallas medianas */
+    }
+    .location {
+        justify-content: center;
+        gap: 15px;
+    }
 }
 
-.ft-div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hdr-nav {
+        flex-wrap: wrap; /* Navegación ajustable */
+        gap: 10px;
+    }
+    .form h2 {
+        font-size: 36px; /* Reducir tamaño del título */
+    }
 }
 
-.ft-div nav {
-    margin: 10px;
-
-}
-
-.ft-div a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.ft-ct {
-    margin-top: 15px;
-
-
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .form h2 {
+        font-size: 28px;
+    }
+    .form p {
+        font-size: 14px;
+    }
 }

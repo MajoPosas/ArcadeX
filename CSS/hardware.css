@@ -1,102 +1,96 @@
+/* Importación de fuentes externas desde Google Fonts. Estas fuentes incluyen estilos variados y son utilizadas a lo largo del diseño. */
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
 
-*{
+/* Estilos globales que eliminan márgenes y rellenos predeterminados y aplican un sistema de caja para simplificar el diseño. */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Declaración de una fuente personalizada 'Joystix Monospace', que se utiliza en elementos clave del diseño. */
 @font-face {
     font-family: 'Joystix Monospace';
     src: url('fonts/Joystix-Monospace.woff2') format('woff2'),
          url('fonts/Joystix-Monospace.woff') format('woff'),
          url('fonts/Joystix-Monospace.otf') format('opentype');
-  }
+}
 
+/* Estilos básicos para el cuerpo de la página: eliminación de márgenes, alineación central y sin rellenos. */
 body {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+/* Configuración del encabezado: diseño centrado, colores oscuros y fuente personalizada. */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
     background-color: rgb(0, 0, 0);
-    justify-content: space-between;
-    font-family: 'Joystix Monospace', opentype;
     color: white;
+    font-family: 'Joystix Monospace', opentype;
     padding: 20px;
 }
 
+/* Estilos para el logotipo del encabezado: permite agrandarlo al pasar el cursor. */
 .hdr-logo-txt {
     display: flex;
     text-decoration: none;
     color: white;
 }
-
 .hdr-logo-txt h1 {
-    transition: transform .2s;
-
+    transition: transform 0.2s;
 }
-
-.hdr-logo-txt h1:hover{
+.hdr-logo-txt h1:hover {
     transform: scale(1.5);
-
 }
 
-.hdr-nav{
+/* Configuración de navegación en el encabezado: disposición flexible y enlaces estilizados. */
+.hdr-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
-
 .hdr-nav a {
     text-decoration: none;
     color: #fff;
     margin: 10px;
 }
 
+/* Animaciones para los enlaces de navegación al pasar el cursor. */
 #l1, #l3, #l5 {
-    transition: transform .2s;
-
+    transition: transform 0.2s;
 }
-
 #l1:hover, #l3:hover, #l5:hover {
     transform: scale(1.5) rotate(15deg);
-
 }
-
 #l2, #l4, #l6 {
-    transition: transform .2s;
-
+    transition: transform 0.2s;
 }
-
 #l2:hover, #l4:hover, #l6:hover {
     transform: scale(1.5) rotate(-15deg);
-
 }
 
+/* Sección de hardware con títulos llamativos y texto estilizado. */
 .Hardware {
     text-align: center;
     padding: 20px;
-
 }
 .Hardware h1 {
     color: rgb(0, 0, 0);
-    margin-bottom: 10px;
     font-family: Orbitron;
     font-size: 70px;
 }
-.Hardware p{
+.Hardware p {
     font-family: Orbitron;
     font-size: 20px;
     margin-bottom: 2%;
 }
+
+/* Estilización del buscador con campos de entrada y botón interactivo. */
 .buscador {
     display: flex;
     justify-content: center;
@@ -120,20 +114,14 @@ header {
 .buscador button:hover {
     background-color: #003f7d;
 }
-h2 {
-    color: ba;
-    font-size: 35px;
-    margin-bottom: 45px;
-    font-family: Orbitron;
-    font-size: 50px;
-}
+
+/* Configuración de tarjetas de productos con diseño en cuadrícula. */
 .product-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
-
 .product-1 {
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -143,11 +131,11 @@ h2 {
 }
 .product-content img {
     width: 100%;
-    height: auto;
     border-radius: 5px;
     object-fit: cover;
 }
 
+/* Estilos para texto, precios y botones de los productos. */
 .product-txt {
     padding: 50px 30px;
 }
@@ -173,7 +161,6 @@ h3 {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -181,10 +168,11 @@ h3 {
     background-color: #e639e6;
 }
 
+/* Configuración de pie de página con colores neutros y enlaces estilizados. */
 footer {
     width: 100%;
     height: auto;
-    background-color: #615b5b;
+    background-color: rgb(97, 91, 91);
     position: absolute;
 }
 
@@ -236,290 +224,76 @@ footer {
 
 }
 
-@media (min-width: 2560px){
+/* Dispositivos con un ancho máximo de 1024px (tabletas y pantallas medianas) */
+@media (max-width: 1024px) {
+    .product-content {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de tres */
+    }
+
+    .hdr-nav {
+        flex-wrap: wrap; /* Permite que los enlaces se ajusten automáticamente */
+    }
+
+    .buscador input {
+        width: 70%; /* Ajusta el tamaño del campo de búsqueda */
+    }
+
+    .btn-2 {
+        font-size: 14px; /* Botones más pequeños */
+        padding: 8px 20px;
+    }
+}
+
+/* Dispositivos con un ancho máximo de 768px (teléfonos grandes y pantallas pequeñas) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .product-content {
+        grid-template-columns: 1fr; /* Una columna para mayor legibilidad */
+    }
+
+    .buscador input {
+        width: 100%; /* Campo de búsqueda ocupa todo el ancho */
+    }
+
+    .buscador button {
+        margin-left: 0;
+        margin-top: 10px; /* Botón debajo del campo de entrada */
+        width: 100%;
+    }
+
+    .ft-div nav {
+        text-align: center;
+    }
+}
+
+/* Dispositivos con un ancho máximo de 480px (teléfonos pequeños) */
+@media (max-width: 480px) {
+    .Hardware h1 {
+        font-size: 50px; /* Reduce el tamaño del título */
+    }
+
+    .Hardware p {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+
     .hdr-logo-txt h1 {
-        font-size: 120px;
+        font-size: 24px; /* Logotipo más pequeño */
     }
 
-    .hdr-nav{
-        font-size: 40px;
-    }
-
-}
-
-@media (min-width: 1436px) {
-    .sct5{
-        height: 40vh;
-
-    }
-
-}
-
-
-@media (max-width: 579px) {
-    
-    .sct1-dv1 {
-        height: 70vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .sct1-dv1-dv2-ct1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .sct1-dv1-dv2-ct1 button {
-        margin: 10px;
-        width: 168px;
-        height: 48px;
-        font-size: 24px;
-    }
-
-    .sct1-dv1-dv2{
-        margin-right: 40px;
-
-
-    }
-
-    .sct1-dv1-dv2 h1 {
-        font-size: 32px;
-        
-    }
-
-    .sct1-dv1-dv2 p{
-        display: none;
-    }
-
-    .sct2-div1{
-        margin-left: 16px;
-    }
-
-    .sct2-div2{
-        flex-direction: column;
-
-    }
-   
-    .div2-box1, .div2-box2, .div2-box3, .div2-box4{
-        position: relative;
-        width: 100%;
-        height: 320px;
-    
-    }
-
-    .box1-div1, .box2-div1, .box3-div1, .box4-div1{
-        left: 16px;
-        bottom: 16px;
-    }
-
-    .sct3 {
-        flex-direction: column;
-    }
-
-    .sct3-div1{
-        text-align: center;
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .sct3-div1 p {
-        font-size: 32px;
-
-    }
-
-    .sct3-div2{
-        margin-right: 0;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .sct3-div2 img{
-        height: 160px;
-
-    }
-
-    .sct4-div2{
-        flex-wrap:  wrap;
-    }
-
-    .sct4-div3{
-        display: none;
-
-    }
-
-    .sct5{
-        height: 56vh;
-
-    }
-
-    .sct6-div2{
-        flex-wrap: wrap;
-
-    }
-
-    .sct6-div3{
-        display: none;
-
-    }
-    
-    
-}
-
-
-@media (min-width:580px) and (max-width: 1016px) {
-    
-    .sct1-dv1 {
-        height: 80vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .sct1-dv1-dv2{
-        margin-right: 40px;
-
-
-    }
-
-    .sct1-dv1-dv2 h1 {
-        font-size: 48px;
-
-    }
-
-    .sct1-dv1-dv2 p{
-        font-size: 32px;
-    }
-
-    .sct2-div1{
-        margin-left: 16px;
-    }
-
-    .sct2-div2{
-        flex-direction: column;
-
-    }
-   
-    .div2-box1, .div2-box2, .div2-box3, .div2-box4{
-        position: relative;
-        width: 100%;
-        height: 320px;
-    
-    }
-
-    .box1-div1, .box2-div1, .box3-div1, .box4-div1{
-        left: 24px;
-        bottom: 24px;
-    }
-
-    .sct3 {
-        flex-direction: column;
-    }
-
-    .sct3-div1{
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .sct3-div1 p {
-        font-size: 32px;
-
-    }
-
-    .sct3-div2{
-        margin-right: 0;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .sct3-div2 img{
-        height: 160px;
-
-    }
-
-    .sct5{
-        height: 48vh;
-
-    }
-
-    .sct6-div2, .sct6-div3{
-        flex-wrap: wrap;
-
+    footer {
+        padding: 10px;
     }
 
     .mail {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        flex-direction: column; /* Apila los elementos verticalmente */
     }
 
-    .mail-inp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+    .mail-inp input,
+    .mail-inp button {
+        width: 90%; /* Ancho completo con un pequeño margen */
+        margin-bottom: 10px;
     }
-
-    .mail-inp input{ 
-        height: 50px;
-        width: 150px;
-    }
-
-    .mail-inp button{
-        height: 40px;
-        width: 100px;
-        background-color: blueviolet;
-        border: none;
-    }
-
-    .ft-div .nv-dv {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-    }
-
-}
-
-
-@media (max-width: 800px) {
-    .ft-div .nv-dv {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-    }
-
-    .mail {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .mail-inp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .mail-inp input{ 
-        height: 50px;
-        width: 150px;
-    }
-
-    .mail-inp button{
-        height: 40px;
-        width: 100px;
-        background-color: blueviolet;
-        border: none;
-    }
-
-   
 }

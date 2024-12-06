@@ -1,36 +1,42 @@
+/* Importación de fuentes desde Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nabla&family=Orbitron:wght@400..900&display=swap");
 
+/* Establecer márgenes, rellenos y box-sizing globalmente para todo el documento */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Definir una fuente personalizada (Joystix Monospace) usando @font-face */
 @font-face {
     font-family: 'Joystix Monospace';
     src: url('fonts/Joystix-Monospace.woff2') format('woff2'),
          url('fonts/Joystix-Monospace.woff') format('woff'),
          url('fonts/Joystix-Monospace.otf') format('opentype');
-  }
+}
 
+/* Estilo básico para el cuerpo de la página */
 body {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+/* Estilos para el encabezado */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);  /* Fondo negro */
     justify-content: space-between;
-    font-family: 'Joystix Monospace', opentype;
+    font-family: 'Joystix Monospace', opentype;  /* Fuente personalizada */
     color: white;
     padding: 20px;
 }
 
+/* Estilo para el logo en el encabezado */
 .hdr-logo-txt {
     display: flex;
     text-decoration: none;
@@ -38,80 +44,84 @@ header {
 }
 
 .hdr-logo-txt h1 {
-    transition: transform .2s;
-
+    transition: transform .2s;  /* Efecto de transición al hacer hover */
 }
 
+/* Efecto de escala en el logo al pasar el mouse */
 .hdr-logo-txt h1:hover{
     transform: scale(1.5);
-
 }
 
+/* Estilo de navegación del encabezado */
 .hdr-nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
+/* Estilo de los enlaces en la navegación */
 .hdr-nav a {
     text-decoration: none;
     color: #fff;
     margin: 10px;
 }
 
+/* Efectos de transición y escala para los enlaces en la navegación */
 #l1, #l3, #l5 {
     transition: transform .2s;
-
 }
 
+/* Efecto de rotación y escala para los elementos de la lista */
 #l1:hover, #l3:hover, #l5:hover {
     transform: scale(1.5) rotate(15deg);
-
 }
 
+/* Efecto de rotación y escala para los elementos de la lista */
 #l2, #l4, #l6 {
     transition: transform .2s;
-
 }
 
 #l2:hover, #l4:hover, #l6:hover {
     transform: scale(1.5) rotate(-15deg);
-
 }
 
+/* Estilo del contenido principal de la página */
 main {
     height: auto;
     margin-top: 2%;
 }
 
+/* Estilos para la sección de promociones */
 .promo {
     margin-top: 4%;
     padding: 0.5rem;
     height: auto;
-    grid-template-columns: repeat(1,1fr);
-
+    grid-template-columns: repeat(1,1fr);  /* Diseño en columnas */
 }
 
+/* Estilo para los botones de promociones */
 .promo a button{
-    margin: 10px;
+    margin: 0;
     width: 168px;
     height: 48px;
     font-size: 24px;
     margin-top:-1%;
     margin-bottom: 1%;
-    background-color: #e7e4e0;
+    background-color: gold;
     font-family: Orbitron;
-
+    border: none;
+    border-radius: 10%;
 }
 
+/* Contenedor flexible para las tarjetas de promoción */
 .promociones {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* Estilo para el título de la promoción */
 .promo h2 {
     text-decoration: none;
     text-align: center;
@@ -121,9 +131,9 @@ main {
     color: black;
     margin-bottom: 5%;
     font-family: Orbitron;
-
-
 }
+
+/* Estilos para las tarjetas de productos o promociones */
 .card {
     display: flex;
     flex-direction: column;
@@ -138,6 +148,7 @@ main {
     transition: transform 0.7s ease-in-out;
 }
 
+/* Estilos para el encabezado dentro de las tarjetas */
 .card h3 {
     margin: 0px;
     background-color: rgb(160, 160, 196);
@@ -146,12 +157,14 @@ main {
     padding: 0.5rem;
 }
 
+/* Estilo para las imágenes dentro de las tarjetas */
 .card img {
     align-content: center;
     width: 300px;
     height: 300px;
 }
 
+/* Estilo para los párrafos dentro de las tarjetas */
 .card p {
    flex: 1 0 auto;
    padding: 0.5rem;
@@ -159,6 +172,7 @@ main {
    color: black; 
 }
 
+/* Estilo para el precio dentro de las tarjetas */
 .card span {
     display: block;
     text-align: right;
@@ -167,20 +181,24 @@ main {
     font-weight: bold;
 }
 
+/* Efecto al pasar el mouse sobre las tarjetas de productos */
 .promociones .card:hover {
     transform: scale(120%);
     z-index: 1000;
 }
 
+/* Estilo para la sección de video */
 .video {
     margin-top: -2%;
 }
 
+/* Contenedor para centrar y limitar el ancho de los elementos */
 .wrap {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Estilo para los títulos dentro de la sección de contenido */
 .wrap-title-section h2 {
     margin-top: 5%;
     font-size: 50px;
@@ -188,6 +206,7 @@ main {
     font-family: Orbitron;
 }
 
+/* Estilo para la sección de cartas en 2 columnas */
 .column-2.carta {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -197,6 +216,7 @@ main {
     row-gap: 1rem;
 }
 
+/* Estilo para la carta de juegos */
 .juego-carta {
     display: flex;
     align-items: center;
@@ -204,17 +224,20 @@ main {
     border-radius: 6px;
 }
 
+/* Estilo para la imagen de los juegos */
 .img-juego {
     display: flex;
     flex-basis: 25%;
     justify-content: center;
 }
 
+/* Estilo para la imagen de los juegos */
 .img-juego img {
     width: 150px;
     height: 150px;
 }
 
+/* Estilo para el título dentro de la carta de juego */
 .title-juego {
     border: 1px solid #e7e4e0;
     border-bottom: none;
@@ -223,6 +246,7 @@ main {
     padding: 0 1rem;
 }
 
+/* Estilo para el precio dentro de la carta de juego */
 .precio-juego {
     display: flex;
     flex-basis: 15%;
@@ -230,6 +254,7 @@ main {
     font-weight: bold;
 }
 
+/* Estilo para el pie de página */
 footer {
     width: 100%;
     height: auto;
@@ -237,6 +262,7 @@ footer {
     position: absolute;
 }
 
+/* Estilo para la sección de correo en el pie de página */
 .mail{
     display: flex;
     justify-content: center;
@@ -245,12 +271,13 @@ footer {
     padding: 40px;
 }
 
+/* Estilo para los campos de entrada en la sección de correo */
 .mail-inp input{
     height: 50px;
     width: 150px;
-
 }
 
+/* Estilo para el botón en la sección de correo */
 .mail-inp button {
     height: 40px;
     width: 100px;
@@ -258,19 +285,21 @@ footer {
     border: none;
 }
 
+/* Estilo para el título en la sección de correo */
 .mail h1 {
     margin: 10px;
 }
 
+/* Estilos para el contenedor del pie de página */
 .ft-div {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+/* Estilos para los enlaces del pie de página */
 .ft-div nav {
     margin: 10px;
-
 }
 
 .ft-div a {
@@ -279,13 +308,12 @@ footer {
     margin: 10px;
 }
 
+/* Estilo adicional para la sección de contacto en el pie de página */
 .ft-ct {
     margin-top: 15px;
-
-
 }
 
-/* Para pantallas pequeñas (teléfonos, <600px) */
+/* Estilos responsivos para pantallas pequeñas (teléfonos, <600px) */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -293,60 +321,24 @@ footer {
     }
 
     .hdr-logo-txt h1 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
-    .hdr-nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .promo h2 {
-        font-size: 30px;
-    }
-
-    .card img {
-        width: 100%;
-        height: auto;
+    .hdr-nav a {
+        font-size: 12px;
     }
 
     .card {
-        max-width: 100%;
-    }
-
-    .column-2.carta {
-        grid-template-columns: 1fr;
-    }
-
-    .juego-carta {
-        flex-direction: column;
-    }
-
-    footer {
-        padding: 20px;
-    }
-}
-
-/* Para pantallas medianas (tabletas, 601px-900px) */
-@media (max-width: 900px) {
-    .hdr-nav {
-        flex-wrap: wrap;
-    }
-
-    .promo h2 {
-        font-size: 40px;
-    }
-
-    .column-2.carta {
-        grid-template-columns: repeat(2, 1fr);
+        flex: 1;
+        margin: 10px;
+        max-width: 300px;
     }
 
     .wrap-title-section h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
-    .juego-carta .img-juego img {
-        width: 120px;
-        height: 120px;
+    .column-2 {
+        grid-template-columns: 1fr;
     }
 }
