@@ -154,8 +154,10 @@ main {
     margin: 0px;
     background-color: rgb(160, 160, 196);
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     padding: 0.5rem;
+    font-family: Orbitron;
+
 }
 
 /* Estilo para las imágenes dentro de las tarjetas */
@@ -169,8 +171,10 @@ main {
 .card p {
    flex: 1 0 auto;
    padding: 0.5rem;
-   font-size: 25px;
+   font-size: 20px;
    color: black; 
+   font-family: Orbitron;
+
 }
 
 /* Estilo para el precio dentro de las tarjetas */
@@ -178,8 +182,10 @@ main {
     display: block;
     text-align: right;
     padding: 0.5rem;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: Orbitron;
+
 }
 
 /* Efecto al pasar el mouse sobre las tarjetas de productos */
@@ -245,6 +251,8 @@ main {
     border-top: none;
     flex-basis: 60%;
     padding: 0 1rem;
+    font-family: Orbitron;
+    font-size: 12px;
 }
 
 /* Estilo para el precio dentro de la carta de juego */
@@ -253,6 +261,8 @@ main {
     flex-basis: 15%;
     justify-content: center;
     font-weight: bold;
+    font-family: Orbitron;
+    font-size: 12px;
 }
 
 /* Estilo para el pie de página */
