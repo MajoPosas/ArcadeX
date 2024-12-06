@@ -168,33 +168,65 @@ header {
     height: auto;
 }
 
-/* Footer */
+/* Estilo para el pie de página */
 footer {
     width: 100%;
     height: auto;
-    background-color: #615b5b; /* Fondo gris */
+    background-color: #615b5b;
     position: absolute;
 }
 
-/* Sección de correos */
-.mail {
+/* Estilo para la sección de correo en el pie de página */
+.mail{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(160, 160, 196);
     padding: 40px;
 }
-.mail-inp input {
+
+/* Estilo para los campos de entrada en la sección de correo */
+.mail-inp input{
     height: 50px;
     width: 150px;
 }
+
+/* Estilo para el botón en la sección de correo */
 .mail-inp button {
     height: 40px;
     width: 100px;
-    background-color: white;
-    color: rgb(160, 160, 196);
+    background-color: blue;
     border: none;
 }
+
+/* Estilo para el título en la sección de correo */
+.mail h1 {
+    margin: 10px;
+}
+
+/* Estilos para el contenedor del pie de página */
+.ft-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos para los enlaces del pie de página */
+.ft-div nav {
+    margin: 10px;
+}
+
+.ft-div a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Estilo adicional para la sección de contacto en el pie de página */
+.ft-ct {
+    margin-top: 15px;
+}
+
 
 /* Media Queries para diseño responsivo */
 /* Ajustes para pantallas medianas */
