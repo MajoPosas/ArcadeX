@@ -110,16 +110,19 @@ header {
     width: 50%;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-family: Orbitron;
+
 }
 
 .buscador button {
     padding: 10px 20px;
-    background-color: #005eb8;
-    color: white;
+    background-color: gold;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+    font-family: Orbitron;
 }
 
 .buscador button:hover {
